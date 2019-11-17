@@ -1,0 +1,70 @@
+.indicator-container {
+	position:relative;
+	z-index:1
+}
+.indicator-container .indicator-loader {
+	opacity:0;
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	z-index:999;
+	background-color:rgba(255,
+	255,
+	255,
+	.95);
+	-webkit-transition:opacity .2s ease;
+	transition:opacity .2s ease
+}
+.indicator-container .indicator-loader:after {
+	width:50px;
+	height:50px;
+	background-image:url(../resimler/loadingindicator.gif);
+	background-size:50px 50px;
+	background-position:center;
+	background-repeat:no-repeat;
+	position:absolute;
+	display:inline-block;
+	top:50%;
+	left:50%;
+	-webkit-transform:translate(-50%,
+	-50%);
+	-ms-transform:translate(-50%,
+	-50%);
+	transform:translate(-50%,
+	-50%);
+	content:' ';
+	overflow:hidden
+}
+.indicator-container.indicator-loading .indicator-loader {
+	opacity:1
+}
+body.indicator-container:before {
+	opacity:0;
+	position:fixed;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	z-index:999;
+	background-color:rgba(255,
+	255,
+	255,
+	.9);
+	-webkit-transition:opacity .2s ease;
+	transition:opacity .2s ease;
+	display:block;
+	background-image:url(../resimler/loadingindicator.gif);
+	background-size:50px 50px;
+	background-position:center;
+	background-repeat:no-repeat;
+	content:' ';
+	overflow:hidden
+}
+body.indicator-container.indicator-loading:before {
+	opacity:1
+}
+body.indicator-container>indicator-loader {
+	display:none
+}
