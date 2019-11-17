@@ -4,10 +4,13 @@
     <meta charset="utf-8">
     <title>ceptesok</title>
   </head>
-  <body>
+  <body class="indicator-container indicator-loading">
     <div id="app"></div>
     
     <script src="/dist/build.js"></script>
+    <script>
+      setTimeout(function(){ document.querySelector('body').className="" }, 3000);
+   </script>
     <script src="./src/assets/js/a.js"></script>
     <script src="./src/assets/js/b.js"></script>
   </body>

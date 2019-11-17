@@ -118,10 +118,5 @@ export default {
             document.getElementById(event.currentTarget.id).className="order-opt active"
        }
    },
-   data(){
-       return{
-           title:"asdasdasd",
-       }
-   }
 }
 </script>

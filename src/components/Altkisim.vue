@@ -28,7 +28,7 @@
                         <li class="menus-menu">
                            <h2 class="menu-title">Yardım</h2>
                            <ul class="menu-items">
-                              <li class="items-item"><a href="https://www.ceptesok.com/yardim#/uyelik-islemleri">Üyelik İşlemleri</a></li>
+                             <router-link to="/yardim"> <li class="items-item">Üyelik İşlemleri</li></router-link>
                               <li class="items-item"><a href="https://www.ceptesok.com/yardim#/hesabim-menusu">Hesabım Menüsü</a></li>
                               <li class="items-item"><a href="https://www.ceptesok.com/yardim#/siparis-islemleri">Sipariş İşlemleri</a></li>
                               <li class="items-item"><a href="https://www.ceptesok.com/yardim#/yasal-uyarilar">Yasal Uyarılar</a></li>

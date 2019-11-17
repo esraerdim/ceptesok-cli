@@ -2591,7 +2591,7 @@ body.blockoverflow{
 .indicator-alanı .indicator-yuklendi:after{
     width:50px;
     height:50px;
-    background-image:url(/resimler/loadingindicator.gif);
+    background-image:url(../../img/loadingindicator.gif);
     background-size:50px 50px;
     background-position:center;
     background-repeat:no-repeat;
@@ -2620,7 +2620,7 @@ body.indicator-alanı:before{
     -webkit-transition:opacity .2s ease;
     transition:opacity .2s ease;
     display:block;
-    background-image:url(/assets/img/loadingindicator.gif);
+    background-image:url(../../img/loadingindicator.gif);
     background-size:50px 50px;
     background-position:center;
     background-repeat:no-repeat;

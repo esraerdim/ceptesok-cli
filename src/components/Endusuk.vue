@@ -51,7 +51,7 @@
 </template>
 <script>
 export default {
-      name: 'Endusuk',
+    name: 'Endusuk',
     data() {
         return {
          data:"",
