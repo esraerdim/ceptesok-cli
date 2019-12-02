@@ -10,6 +10,7 @@
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
   },
   "dependencies": {
+    "nodemon": "^2.0.1",
     "vue": "^2.6.10",
     "vue-accordion": "^1.0.0",
     "vue-badger-accordion": "^1.1.6",
