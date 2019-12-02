@@ -74,9 +74,11 @@
                 <router-view/>
             </ul>
         </div>
+          <sayfalar/>
     </main>
 </div>
       <altkisim/>
+    
       </div>
 
 </template>
@@ -99,6 +101,7 @@ export default {
        Normalurun,
        Enyeni,
        Markalar,
+       Sayfalar,
    },
    methods:{
        focusx:function(event){

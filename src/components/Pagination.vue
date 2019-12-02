@@ -2,16 +2,13 @@
 <div>
     <nav class="section listing-pagination">
         <ul class="pagination-elements">
-            <li class="pagination-element active"><a class="javascript;" class="pagination-link">1</a></li>
-            <li class="pagination-element"><a href="javascript:;" class="pagination-link">
-                2
-            </a></li><li class="pagination-element"><a href="javascript:;" class="pagination-link">
-                3
-            </a></li><li class="pagination-element"><a href="javascript:;" class="pagination-link">
-                4
-            </a></li><li class="pagination-element"><a href="javascript:;" class="pagination-link">
-                5
-            </a></li> <!----> <!----> <li class="pagination-element direction"><a href="javascript:;" class="pagination-link"><i class="icon-angle-right"></i></a></li></ul></nav>
+            <li class="pagination-element active"><a href="#" class="pagination-link">1</a></li>
+            <li class="pagination-element"><a href="#;" class="pagination-link">2</a></li>
+                <li class="pagination-element"><a href="#;" class="pagination-link">3</a></li>
+                <li class="pagination-element"><a href="/page/4" class="pagination-link">4</a></li>
+                <li class="pagination-element"><router-link :to="{ name: 'Et', query: { page:5 }}" class="pagination-link">5 </router-link></li>
+        </ul>
+    </nav>
 </div>
 </template>
 
@@ -19,9 +16,7 @@
 export default {
     name:'Sayfalar',
     data (){
-        return{
-
-        }
+        return{}
     }
 }
 </script>
