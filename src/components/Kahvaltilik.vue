@@ -1,6 +1,7 @@
 <template>
 <div>
       <header><headers/></header>
+       <a href="#"><img alt="Yukarı Çık" class="yukarikaydir" src="../img/yc.png" style="display: block;"></a>
     <div class="grid-row">
     <div class="section listing-toprow">
         <div class="grid-col toprow-col toprow-mobile">
