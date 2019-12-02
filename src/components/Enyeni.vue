@@ -28,7 +28,7 @@
     <div class="product-content">
         <!---->
         <div class="product-image-wrap">
-            <a :href="'https://www.ceptesok.com/'+ product.link_name" class="product-image imagefit fit"><img class="imagefit-img abs" :src="'https://cdnd.ceptesok.com/product/420x420/'+product.files[0].document_href"></a>
+            <a :href="'https://www.ceptesok.com/'+ product.link_name" class="product-image imagefit fit"><img class="imagefit-img abs" :src="'https://cdnd.ceptesok.com/product/420x420/'+ getPicture(product.files[0])"></a>
         </div>
         <div class="product-price">
             <div class="pricebox">
@@ -91,7 +91,24 @@ export default {
         goo:function(id){
             pageId= id;
             console.log(pageId)
-        }
+        },
+         getPicture(images){
+            var imgurl;
+            try{
+                if(images.document_href.includes("-"))
+                {
+                    imgurl=images.document_href
+                }else
+                {
+                    imgurl="product-default.png"
+                }
+            }catch(err){
+                imgurl="product-default.png"
+            }
+            console.log(imgurl)
+            return imgurl;
+            
+        },
     },
     watch: {
         '$route.query.page'(){
