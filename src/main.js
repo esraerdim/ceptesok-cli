@@ -94,8 +94,11 @@ const router = new VueRouter({
   ],
   mode :'history'
 })
-window.vuewm = new Vue({
+new Vue({
   el: '#app',
   router,
   render: h => h(App)
+})
+Vue.filter('regexbus', function (value) {
+  return value.replace(/<\/?[^>]+>/gi, '').replace(new RegExp('&uuml;', 'g'),'ü').replace(new RegExp('&ccedil;', 'g'),'ç').replace(new RegExp('&nbsp;', 'g'),'').replace(new RegExp('&#8221;', 'g'),'').replace(new RegExp('&hellip;', 'g'),'').replace(new RegExp('&Uuml;', 'g'),'Ü').replace(new RegExp('&ouml;', 'g'),'ö').replace(new RegExp('&ldquo;', 'g'),'').replace(new RegExp('&rdquo;', 'g'),'').replace(new RegExp('&rsquo;', 'g'),'')
 })

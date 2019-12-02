@@ -84,8 +84,8 @@
                 <main class="section account-content account-help">
                     <badger-accordion class="sectionacc">
                         <badger-accordion-item v-for="d in data.payload.faq.faqs" :key="d.id">
-                            <template slot="header">{{d.question}}</template>    
-                            <template slot="content">{{d.answer}}</template>  
+                            <template slot="header">{{d.question | regexbus}}</template>    
+                            <template slot="content">{{d.answer | regexbus}}</template>  
                         </badger-accordion-item>
                             </badger-accordion>
                 </main>
@@ -117,14 +117,17 @@ export default {
     fetch('https://www.ceptesok.com/api/v1/faqs/uyelik-islemleri')
         .then(response => response.json())
         .then(data => {
-            this.data=data;
-            console.log(data.payload.faq.faqs.length)
+            this.data=data
             this.gor=true;
           });
    }
+   
 }
 </script>
 <style>
+.badger-accordion-toggle{
+   margin-top: 15px;
+}
 .sectionacc{
     cursor: pointer;
     z-index: 10;
