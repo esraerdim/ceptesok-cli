@@ -1,6 +1,6 @@
 <template>
     <footer>
-    <div class="footer-top">
+    <div class="footer-top" v-if="footerstate"><i class="icon-close" v-on:click="closefooter()"></i> 
             <div class="wrapper gird-alanı">
                <nav class="top-nav grid-row">
                   <div class="grid-col nav-menu">
@@ -65,7 +65,7 @@
                </address>
             </div>
          </div>
-         
+         <i class="icon-close" v-if="!footerstate" v-on:click="closefooter()"></i>
          <div class="footer-bottom">
             <div class="wrapper">
                <div class="bottom-copyright">© 2017 ceptesok.com Tüm Hakları Saklıdır.</div>
@@ -75,13 +75,38 @@
                </ul>
             </div>
          </div>
+         
          </footer>
+         
 </template>
 <script>
 export default {
     name: 'Altkisim',
     data () {
-    return {};
-  }
+    return {
+       footerstate:true,
+    };
+  },
+  methods: {
+     closefooter:function(){
+      if(this.footerstate==true)
+         this.footerstate=false;
+         else
+         this.footerstate=true;
+     }
+  },
 }
 </script>
+<style>
+.icon-close{
+   background-color:white;
+   padding: 1rem 1rem 1rem 1rem;
+   border: 3px solid #FFB20D;
+   border-radius: 2rem;
+   font-size: 25px;
+   font-weight: 100;
+   float: right;
+   margin-top: 0px;
+   margin-right: 3%;
+}
+</style>
