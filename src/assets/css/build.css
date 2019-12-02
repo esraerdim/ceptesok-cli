@@ -926,6 +926,20 @@ h1,h2,h3,h4,h5,h6{
     -webkit-transition:color 180ms ease,border-color 180ms ease;
     transition:color 180ms ease,border-color 180ms ease
 }
+.inputform input:focus{
+    background-color: red;
+    position: absolute;
+    width: 1375px;
+    height: 250px;
+    top: -125px;
+    left: -378px;
+    padding:.71428571rem 1.42857143rem .71428571rem 1.42857143rem;
+    line-height:1.71428571rem;
+    font-size:50px;
+    font-family:avenir;
+    font-weight:500;
+    color:#040404;
+}
 .inputform input:-webkit-autofill,.inputform select:-webkit-autofill,.inputform textarea:-webkit-autofill{
     -webkit-box-shadow:0 0 0 50px #fff inset;
     -webkit-text-fill-color:#040404
@@ -948,7 +962,7 @@ h1,h2,h3,h4,h5,h6{
 }
 .inputform .form-note{
     font-size:.92857143rem;
-    font-weight:500
+    font-weight:500;
 }
 .inputform .form-error{
     position:absolute;
@@ -976,7 +990,6 @@ h1,h2,h3,h4,h5,h6{
     position:relative
 }
 .inputwrap input:not([type=button]):not([type=submit]),.inputwrap textarea{
-    width:100%;
     display:block
 }
 .inputwrap .selectboxit-alanı,.inputwrap select{
