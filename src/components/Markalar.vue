@@ -27,7 +27,6 @@ export default {
         .then(data => {
             var result= [];
             data.payload.products.forEach(element => {
-                console.log(element.brand.name)
                if(result.includes(element.brand.name))
                {
 
@@ -46,7 +45,6 @@ export default {
         .then(data => {
             var result= [];
             data.payload.products.forEach(element => {
-                console.log(element.brand.name)
                if(result.includes(element.brand.name))
                {
 
@@ -65,7 +63,6 @@ export default {
         .then(data => {
             var result= [];
             data.payload.products.forEach(element => {
-                console.log(element.brand.name)
                if(result.includes(element.brand.name))
                {
 

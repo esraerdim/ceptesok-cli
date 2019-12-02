@@ -3,6 +3,7 @@ import App from './App.vue'
 import VueRouter from 'vue-router'
 import Home from './components/Home.vue'
 import Et from './components/Et.vue'
+import Sut from './components/Sut.vue'
 import Kahvaltilik from './components/kahvaltilik.vue'
 import Endusuk  from './components/Endusuk.vue'
 import Normalurun from './components/Normalurun.vue'
@@ -41,7 +42,7 @@ const router = new VueRouter({
     },
     {
       path: '/sut',
-      component:Et,
+      component:Sut,
         children: [
         {
           path: 'order/opa/',
