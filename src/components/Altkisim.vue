@@ -107,6 +107,6 @@ export default {
    font-weight: 100;
    float: right;
    margin-top: 0px;
-   margin-right: 3%;
+   margin-right: 8%;
 }
 </style>
