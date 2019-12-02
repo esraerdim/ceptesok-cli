@@ -2,11 +2,11 @@
 <div>
     <nav class="section listing-pagination">
         <ul class="pagination-elements">
-            <li class="pagination-element active"><a href="#" class="pagination-link">1</a></li>
-            <li class="pagination-element"><a href="#;" class="pagination-link">2</a></li>
-                <li class="pagination-element"><a href="#;" class="pagination-link">3</a></li>
-                <li class="pagination-element"><a href="/page/4" class="pagination-link">4</a></li>
-                <li class="pagination-element"><router-link :to="{ name: 'Et', query: { page:5 }}" class="pagination-link">5 </router-link></li>
+            <li class="pagination-element active"><router-link :to="{ path: `${this.$route.fullPath}`, query: { page:1 }}" class="pagination-link">1</router-link></li>
+            <li class="pagination-element"><router-link :to="{ path: `${this.$route.fullPath}`, query: { page:2 }}" class="pagination-link">2</router-link></li>
+                <li class="pagination-element"><router-link :to="{ path: `${this.$route.fullPath}`, query: { page:3 }}" class="pagination-link">3</router-link></li>
+                <li class="pagination-element"><router-link :to="{ path: `${this.$route.fullPath}`, query: { page:4 }}" class="pagination-link">4</router-link></li>
+                <li class="pagination-element"><router-link :to="{ path: `${this.$route.fullPath}`, query: { page:5 }}" class="pagination-link">5 </router-link></li>
         </ul>
     </nav>
 </div>
