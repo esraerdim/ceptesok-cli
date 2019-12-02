@@ -95,7 +95,7 @@ export default {
          getPicture(images){
             var imgurl;
             try{
-                if(images.document_href.includes("-"))
+                if(images.document_href.includes(""))
                 {
                     imgurl=images.document_href
                 }else
@@ -105,7 +105,6 @@ export default {
             }catch(err){
                 imgurl="product-default.png"
             }
-            console.log(imgurl)
             return imgurl;
             
         },

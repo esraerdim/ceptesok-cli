@@ -64,14 +64,14 @@ export default {
         getPicture(images){
             var imgurl;
             try{
-            if(images.document_href=="undefined")
+            if(images.document_href.includes(""))
             {
                 imgurl= images.document_href   
             }else{
-                imgurl= images.document_href
+                imgurl= "product-default.png"
             }
             }catch(err){
-                imgurl= images.document_href
+                imgurl= "product-default.png"
             }
             return  imgurl;
             
