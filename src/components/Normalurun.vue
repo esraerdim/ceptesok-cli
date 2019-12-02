@@ -27,8 +27,8 @@
     </div>
     <div class="product-content">
         <!---->
-        <div class="product-image-wrap" v-for="pr in product.files" :key="pr.data">
-            <a :href="'https://www.ceptesok.com/'+ product.link_name" class="product-image imagefit fit"><img class="imagefit-img abs" :src="'https://cdnd.ceptesok.com/product/420x420/'+pr.document_href"></a>
+        <div class="product-image-wrap">
+            <a :href="'https://www.ceptesok.com/'+ product.link_name" class="product-image imagefit fit"><div v-if="product.files[0]"><img class="imagefit-img abs" :src="'https://cdnd.ceptesok.com/product/420x420/'+ getPicture(product.files[0])"></div></a>
         </div>
         <div class="product-price">
             <div class="pricebox">
@@ -61,16 +61,21 @@ export default {
         gettype:function(miktar){
            return miktar == 1 ? "Adet" : "Kg"
         },
-        goo:function(){
-            console.log(this.$route)
+        getPicture(images){
+            var imgurl;
+            if(images.document_href=="undefined")
+            {
+                imgurl= images.document_href   
+            }else{
+                imgurl= images.document_href
+            }
+            return  imgurl;
+            
         },
-        attrdegis:function(newAttrid){
-           
-        }
-    },
-    created() {
+         getanyp:function(){
+             console.log(this.$route.query)
         if(this.$route.fullPath.includes('et')){
-        fetch('https://www.ceptesok.com/api/v1/products?limit=52&order=rank&page=1&categoryId=1242')
+        fetch('https://www.ceptesok.com/api/v1/products?limit=52&order=rank&page='+this.$route.query.page +'&categoryId=1242')
         .then(response => response.json())
         .then(data => {
             this.data=data;
@@ -79,7 +84,7 @@ export default {
           });
         }
         if(this.$route.fullPath.includes('kahvaltilik')){
-        fetch('https://www.ceptesok.com/api/v1/products?limit=52&order=rank&page=1&categoryId=1245')
+        fetch('https://www.ceptesok.com/api/v1/products?limit=52&order=rank&page='+this.$route.query.page +'&categoryId=1245')
         .then(response => response.json())
         .then(data => {
             this.data=data;
@@ -88,7 +93,46 @@ export default {
           });
         }
          if(this.$route.fullPath.includes('sut')){ 
-        fetch('https://www.ceptesok.com/api/v1/products?limit=52&order=rank&page=1&categoryId=1244')
+        fetch('https://www.ceptesok.com/api/v1/products?limit=52&order=rank&page='+this.$route.query.page +'&categoryId=1244')
+        .then(response => response.json())
+        .then(data => {
+            this.data=data;
+            this.gor=true;
+            document.title="Süt ve Peynirler";
+          });
+        }
+        }
+    },
+     watch: {
+        '$route.query.page'(){
+            this.getanyp();
+        }
+     },
+     mounted() {
+            this.getanyp();
+    },
+    created() {
+        console.log(this.$route.query)
+        if(this.$route.fullPath.includes('et')){
+        fetch('https://www.ceptesok.com/api/v1/products?limit=52&order=rank&page='+this.$route.query.page +'&categoryId=1242')
+        .then(response => response.json())
+        .then(data => {
+            this.data=data;
+            this.gor=true;
+            document.title="Kırmızı Et";
+          });
+        }
+        if(this.$route.fullPath.includes('kahvaltilik')){
+        fetch('https://www.ceptesok.com/api/v1/products?limit=52&order=rank&page='+this.$route.query.page +'&categoryId=1245')
+        .then(response => response.json())
+        .then(data => {
+            this.data=data;
+            this.gor=true;
+            document.title="Kahvaltılık";
+          });
+        }
+         if(this.$route.fullPath.includes('sut')){ 
+        fetch('https://www.ceptesok.com/api/v1/products?limit=52&order=rank&page='+this.$route.query.page +'&categoryId=1244')
         .then(response => response.json())
         .then(data => {
             this.data=data;

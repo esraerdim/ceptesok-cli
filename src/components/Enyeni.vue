@@ -27,8 +27,8 @@
     </div>
     <div class="product-content">
         <!---->
-        <div class="product-image-wrap" v-for="pr in product.files" :key="pr.data">
-            <a :href="'https://www.ceptesok.com/'+ product.link_name" class="product-image imagefit fit"><img class="imagefit-img abs" :src="'https://cdnd.ceptesok.com/product/420x420/'+pr.document_href"></a>
+        <div class="product-image-wrap">
+            <a :href="'https://www.ceptesok.com/'+ product.link_name" class="product-image imagefit fit"><img class="imagefit-img abs" :src="'https://cdnd.ceptesok.com/product/420x420/'+product.files[0].document_href"></a>
         </div>
         <div class="product-price">
             <div class="pricebox">
@@ -62,10 +62,44 @@ export default {
         gettype:function(miktar){
            return miktar == 1 ? "Adet" : "Kg"
         },
+        getanyp:function(){
+            if(this.$route.fullPath.includes('et')){
+                fetch('https://www.ceptesok.com/api/v1/products?limit=52&order=ocd&page='+this.$route.query.page +'&categoryId=1242')
+                .then(response => response.json())
+                .then(data => {
+                    this.data=data;
+                    this.gor=true;
+                });
+            }
+            if(this.$route.fullPath.includes('sut')){
+                fetch('https://www.ceptesok.com/api/v1/products?limit=52&order=ocd&page='+this.$route.query.page +'&categoryId=1244')
+                .then(response => response.json())
+                .then(data => {
+                    this.data=data;
+                    this.gor=true;
+                });
+            }
+            if(this.$route.fullPath.includes('kahvaltilik')){
+            fetch('https://www.ceptesok.com/api/v1/products?limit=52&order=ocd&page='+this.$route.query.page +'&categoryId=1245')
+                .then(response => response.json())
+                .then(data => {
+                    this.data=data;
+                    this.gor=true;
+                });
+            }
+        },
         goo:function(id){
             pageId= id;
             console.log(pageId)
         }
+    },
+    watch: {
+        '$route.query.page'(){
+            this.getanyp();
+        }
+     },
+     mounted() {
+            this.getanyp();
     },
     created() {
         if(this.$route.fullPath.includes('et')){

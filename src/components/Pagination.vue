@@ -6,7 +6,7 @@
             <li class="pagination-element"><router-link :to="{ path: `${this.$route.fullPath}`, query: { page:2 }}" class="pagination-link">2</router-link></li>
                 <li class="pagination-element"><router-link :to="{ path: `${this.$route.fullPath}`, query: { page:3 }}" class="pagination-link">3</router-link></li>
                 <li class="pagination-element"><router-link :to="{ path: `${this.$route.fullPath}`, query: { page:4 }}" class="pagination-link">4</router-link></li>
-                <li class="pagination-element"><router-link :to="{ path: `${this.$route.fullPath}`, query: { page:5 }}" class="pagination-link">5 </router-link></li>
+                <li class="pagination-element"><router-link :to="{ path: `${this.$route.fullPath}`, query: { page:5 }}" class="pagination-link">5</router-link></li>
         </ul>
     </nav>
 </div>
@@ -17,6 +17,19 @@ export default {
     name:'Sayfalar',
     data (){
         return{}
+    },
+    methods: {
+        getanyw:function(){
+            console.log(this.$route.query)
+        }
+    },
+    watch: {
+        '$route.query.page'(){
+            this.getanyw();
+        }
+    },
+    mounted() {
+            this.getanyw();
     }
 }
 </script>

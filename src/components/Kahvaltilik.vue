@@ -84,6 +84,7 @@
                 <router-view/>
             </ul>
         </div>
+        <sayfalar/>
     </main>
 </div>
       <altkisim/>
@@ -97,6 +98,7 @@ import Endusuk from './Endusuk.vue'
 import Normalurun from './Normalurun.vue'
 import Enyeni from './Enyeni.vue'
 import Markalar from './Markalar.vue'
+import Sayfalar from './Pagination.vue'
 
 export default {
 
@@ -108,6 +110,7 @@ export default {
        Normalurun,
        Enyeni,
        Markalar,
+       Sayfalar,
    },
    methods:{
        focusx:function(event){
