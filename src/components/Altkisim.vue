@@ -28,14 +28,14 @@
                         <li class="menus-menu">
                            <h2 class="menu-title">Yardım</h2>
                            <ul class="menu-items">
-                             <router-link to="/yardim"> <li class="items-item">Üyelik İşlemleri</li></router-link>
-                              <li class="items-item"><a href="https://www.ceptesok.com/yardim#/hesabim-menusu">Hesabım Menüsü</a></li>
-                              <li class="items-item"><a href="https://www.ceptesok.com/yardim#/siparis-islemleri">Sipariş İşlemleri</a></li>
-                              <li class="items-item"><a href="https://www.ceptesok.com/yardim#/yasal-uyarilar">Yasal Uyarılar</a></li>
-                              <li class="items-item"><a href="https://www.ceptesok.com/yardim#/guvenlik-politikasi">Güvenlik Politikası</a></li>
-                              <li class="items-item"><a href="https://www.ceptesok.com/yardim#/kullanim-kosullari">Kullanım Koşulları</a></li>
-                              <li class="items-item"><a href="https://www.ceptesok.com/yardim#/kvkk">Kişisel Verilerin Korunması</a></li>
-                              <li class="items-item"><a href="https://www.ceptesok.com/yardim#/hakkimizda">Hakkımızda</a></li>
+                             <router-link to="/yardim/uyelik-islemleri"> <li class="items-item">Üyelik İşlemleri</li></router-link>
+                              <li class="items-item"><a href="/yardim/hesabim-menusu">Hesabım Menüsü</a></li>
+                              <li class="items-item"><a href="/yardim/siparis-islemleri">Sipariş İşlemleri</a></li>
+                              <li class="items-item"><a href="/yardim/yasal-uyarilar">Yasal Uyarılar</a></li>
+                              <li class="items-item"><a href="/yardim/guvenlik-politikasi">Güvenlik Politikası</a></li>
+                              <li class="items-item"><a href="/yardim/kullanim-kosullari">Kullanım Koşulları</a></li>
+                              <li class="items-item"><a href="/yardim/kvkk">Kişisel Verilerin Korunması</a></li>
+                              <li class="items-item"><a href="/yardim/hakkimizda">Hakkımızda</a></li>
                            </ul>
                         </li>
                         <!---->

@@ -96,6 +96,7 @@
     
 <altkisim/>
 </div>
+
 </template>
 <script>
 import Altkisim  from './Altkisim.vue'
@@ -114,14 +115,15 @@ export default {
         }
      },
    created(){
-    fetch('https://www.ceptesok.com/api/v1/faqs/uyelik-islemleri')
+
+    fetch('https://www.ceptesok.com/api/v1/faqs/'+this.$route.path.split("/").pop())
         .then(response => response.json())
         .then(data => {
             this.data=data
+            console.log(this.$route)
             this.gor=true;
           });
    }
-   
 }
 </script>
 <style>
