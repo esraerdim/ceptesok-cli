@@ -990,6 +990,7 @@ h1,h2,h3,h4,h5,h6{
     position:relative
 }
 .inputwrap input:not([type=button]):not([type=submit]),.inputwrap textarea{
+    width:100%;
     display:block
 }
 .inputwrap .selectboxit-alanı,.inputwrap select{
