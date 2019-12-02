@@ -21,9 +21,9 @@
                     <div class="gallery-slider owl-carousel owl-loaded owl-drag">
                         <div class="owl-stage-outer">
                             <div class="owl-stage" style="transform: translate3d(-882px, 0px, 0px); transition: all 0s ease 0s; width: 2205px;">
-                                <div class="owl-item active" style="width: 441px;"><img class="slider-image" data-nth="0" :src="'https://cdnd.ceptesok.com/product/420x420/'+data.payload.product.files[0].document_href"></div>
-                                <div class="owl-item cloned" style="width: 441px;"><img class="slider-image" data-nth="0"  :src="'https://cdnd.ceptesok.com/product/420x420/'+data.payload.product.files[0].document_href"></div>
-                                <div class="owl-item cloned" style="width: 441px;"><img class="slider-image" data-nth="0"  :src="'https://cdnd.ceptesok.com/product/420x420/'+data.payload.product.files[0].document_href"></div>
+                                <div class="owl-item active" style="width: 441px;"><img class="slider-image" data-nth="0" :src="'https://cdnd.ceptesok.com/product/420x420/'+getPicture(data.payload.product.files[0])"></div>
+                                <div class="owl-item cloned" style="width: 441px;"><img class="slider-image" data-nth="0"  :src="'https://cdnd.ceptesok.com/product/420x420/'+getPicture(data.payload.product.files[0])"></div>
+                                <div class="owl-item cloned" style="width: 441px;"><img class="slider-image" data-nth="0"  :src="'https://cdnd.ceptesok.com/product/420x420/'+getPicture(data.payload.product.files[0])"></div>
                             </div>
                         </div>
                        
@@ -119,8 +119,25 @@ export default {
            },
            gettype:function(miktar){
             return miktar == 1 ? "Adet" : "Kg"
-         }
+         },
+          getPicture(images){
+            var imgurl;
+            try{
+                if(images.document_href.includes("-"))
+                {
+                    imgurl=images.document_href
+                }else
+                {
+                    imgurl="product-default.png"
+                }
+            }catch(err){
+                imgurl="product-default.png"
+            }
+            console.log(imgurl)
+            return imgurl;
+            
         }
+    }
 }
 </script>
 <style>
