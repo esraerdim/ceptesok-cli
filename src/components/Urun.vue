@@ -86,7 +86,7 @@
 <altkisim/>
 </div>
 </template>
-<script scope>
+<script>
 import headers from './Headers.vue'
 import Altkisim  from './Altkisim.vue'
 
