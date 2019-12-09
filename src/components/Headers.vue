@@ -2,10 +2,12 @@
 <div>
     <div id="namer" v-if="!hideBar">
         <div id="namer-input">
-                <input type="text" name="namername" placeholder="Kategori, ürün, marka ara" v-on:click="hideOne">
-                <div class="namer-controls">
+                <input type="text" name="namername" placeholder="Kategori, ürün, marka ara" v-on:click="hideOne($event)">
+            <div class="namer-controls active">
                 <div><span>Arama</span></div>
-        </div>
+                <div><span>Bilgi</span></div>
+                <div name="namername" v-on:click="hideOne($event)"><span>Vazgeç</span></div>
+            </div>
     </div>
         
     </div>
@@ -20,7 +22,7 @@
                         </div>
                     </div>
                     <form id="searcharea" class="mid-search inputform">
-                        <div class="inputwrap type-text"><button type="button" id="search-submit" class="input-icon icon-search"></button> <input type="text" id="search-input" name="search" autocomplete="off" placeholder="Kategori, ürün, marka ara" v-on:click="hideOne"></div>
+                        <div class="inputwrap type-text"><button type="button" id="search-submit" class="input-icon icon-search"></button> <input type="text" id="search-input" name="search" autocomplete="off" placeholder="Kategori, ürün, marka ara" v-on:click="hideOne($event)"></div>
                         <div id="search-results"></div>
                     </form>
                     <div class="mid-right">
@@ -3733,11 +3735,15 @@ export default {
        }
     },
     methods:{
-     hideOne:function(){
+     hideOne:function(e){
           if(this.hideBar==true)
          this.hideBar=false;
          else
-         this.hideBar=true;
+            {
+            if(e.target.name !== "namername"){
+                this.hideBar=true;
+            }
+            }
      },
      getCategories:function(parent){
          var result=[];
@@ -3790,15 +3796,9 @@ export default {
  box-sizing: border-box;
 }
 
-#namer {
- position: relative;
- max-width: -webkit-fill-available;
- margin: 1px auto 0;
-}
-
 #namer input {
  border: 0;
- border-bottom: 2px solid #1976D2;
+ border-bottom: 2px solid rgb(0, 0, 0);
  width: 100%;
  font-size: 30px;
  line-height: 35px;
@@ -3818,17 +3818,17 @@ export default {
 
 #namer input:focus {
  outline: 0;
-	color: #BBDEFB;
+	color: rgb(7, 7, 7);
 }
 
 #namer input::placeholder {
- color: #1976D2;
+ color: rgb(0, 0, 0);
 }
 
 .namer-controls {
  position: relative;
  display: block;
- height: 30px;
+ height: 55px;
  margin: 20px 0;
  text-align: center;
  opacity: 0.3;
@@ -3852,8 +3852,8 @@ export default {
  display: inline-block;
  margin-right: 5%;
  border-radius: 30px;
- font-size: 14px;
- text-transform: uppercase;
+ font-size: 16px;
+ font-weight: bold;
  letter-spacing: 0.3px;
 }
 
@@ -3863,13 +3863,12 @@ export default {
 
 .namer-controls div span.active {
  box-shadow: none;
- background-color: #1976D2;
+ background-color: rgb(0, 0, 0);
  color: #fff;
 }
 
 #namer-input.serious input {
  letter-spacing: 2px;
- text-transform: uppercase;
  font-family: 'Andada', serif;
  font-weight: 500;
 }
