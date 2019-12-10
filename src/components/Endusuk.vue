@@ -36,7 +36,7 @@
             </div>
         </div>
         <div class="product-description">
-        <h3 class="product-title"><a :href='"./urun.html#/"+product.serial_productid'>{{product.warranty_description}}</a></h3>
+        <h3 class="product-title"><router-link :to="{name: 'Urun',path: '/urun/'+product.link_name, params:{id:product.serial_productid}}"> <h3 class="product-title">{{product.warranty_description}}</h3></router-link></h3>
             <p class="product-subtitle">1 {{gettype(product.unit)}}</p>
             <!---->
             <!---->

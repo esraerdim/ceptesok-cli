@@ -3,7 +3,7 @@
         <div v-if="list">
             <div class="wrappers" v-for="product in data.payload.products" :key="product.data">
                 <div class="productC-img">
-                <img  :src="'https://cdnd.ceptesok.com/product/420x420/'+ getPicture(product.files[0])" height="420" width="327">
+                <img :src="'https://cdnd.ceptesok.com/product/420x420/'+ getPicture(product.files[0])" height="420" width="327">
                 </div>
                 <div class="productC-info">
                 <div class="productC-text">
@@ -46,7 +46,7 @@
     <div class="product-content">
         <!---->
         <div class="product-image-wrap">
-            <a :href="'https://www.ceptesok.com/'+ product.link_name" class="product-image imagefit fit"><img class="imagefit-img abs" :src="'https://cdnd.ceptesok.com/product/420x420/'+ getPicture(product.files[0])"></a>
+            <router-link :to="{name: 'Urun',path: '/urun/'+product.link_name, params:{id:product.serial_productid}}"><img class="imagefit-img abs" :src="'https://cdnd.ceptesok.com/product/420x420/'+ getPicture(product.files[0])"></router-link>
         </div>
         <div class="product-price">
             <div class="pricebox">
