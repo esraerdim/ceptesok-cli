@@ -74,6 +74,24 @@ export default {
             this.gor=true;
           });
         }
+        if(this.$route.fullPath.includes('temizlik'))
+        {
+        fetch('https://www.ceptesok.com/api/v1/products?limit=52&order=opa&page=1&categoryId=1248')
+        .then(response => response.json())
+        .then(data => {
+            var result= [];
+            data.payload.products.forEach(element => {
+               if(result.includes(element.brand.name))
+               {
+
+               }else{
+                   result.push(element.brand.name)
+               }
+            });
+            this.data=result;
+            this.gor=true;
+          });
+        }
     }
     
 }

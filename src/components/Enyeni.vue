@@ -87,6 +87,14 @@ export default {
                     this.gor=true;
                 });
             }
+            if(this.$route.fullPath.includes('temizlik')){
+                fetch('https://www.ceptesok.com/api/v1/products?limit=52&order=ocd&page='+this.$route.query.page +'&categoryId=1248')
+                .then(response => response.json())
+                .then(data => {
+                    this.data=data;
+                    this.gor=true;
+                });
+            }
         },
         goo:function(id){
             pageId= id;
@@ -136,6 +144,14 @@ export default {
         }
         if(this.$route.fullPath.includes('kahvaltilik')){
         fetch('https://www.ceptesok.com/api/v1/products?limit=52&order=ocd&page=1&categoryId=1245')
+        .then(response => response.json())
+        .then(data => {
+            this.data=data;
+            this.gor=true;
+          });
+        }
+        if(this.$route.fullPath.includes('temizlik')){
+        fetch('https://www.ceptesok.com/api/v1/products?limit=52&order=ocd&page=1&categoryId=1248')
         .then(response => response.json())
         .then(data => {
             this.data=data;
