@@ -1,6 +1,6 @@
 <template>
     <div v-if="gor">
-        <div v-if="list">
+        <div v-if="getGstyle">
             <div class="wrappers" v-for="product in data.payload.products" :key="product.data">
                 <div class="productC-img">
                 <img :src="'https://cdnd.ceptesok.com/product/420x420/'+ getPicture(product.files[0])" height="420" width="327">
@@ -17,7 +17,7 @@
                 </div>
             </div>
         </div>
-       <div v-if="!list">
+       <div v-if="!getGstyle">
     <li class="list-result" v-for="product in data.payload.products" :key="product.data">
     <div class="productbox">
     <div class="product-cartcontrols">
@@ -78,6 +78,9 @@ export default {
         }
      },
      methods:{
+        getGstyle:function(){
+          return this.$store.getters.getGridState;
+        },
         gettype:function(miktar){
            return miktar == 1 ? "Adet" : "Kg"
         },

@@ -1,4 +1,5 @@
 import Vue from 'vue'
+import store from './store'
 import App from './App.vue'
 import VueRouter from 'vue-router'
 import Home from './components/Home.vue'
@@ -132,6 +133,7 @@ const router = new VueRouter({
 new Vue({
   el: '#app',
   router,
+  store,
   render: h => h(App)
 })
 Vue.filter('regexbus', function (value) {

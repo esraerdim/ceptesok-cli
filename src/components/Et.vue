@@ -31,10 +31,10 @@
             
         </div>
     </div>
-    <div class="bar">
-                        <a class="list-icon active"></a>
-		                <a class="grid-icon"></a>
-	        </div>
+    <div class="bar" @click="changeGstyle">
+        <a class="list-icon active"></a>
+        <a class="grid-icon" @click="changeGstyle"></a>
+    </div>
     <aside class="grid-col section listing-filters">
         <div class="filters-wrapper">
             <button class="filters-close"><i class="icon-close"></i></button>
@@ -116,8 +116,12 @@ export default {
             document.getElementById('degisiklikicin').childNodes[2].className="order-opt"
             document.getElementById('degisiklikicin').childNodes[4].className="order-opt"
             document.getElementById(event.currentTarget.id).className="order-opt active"
-       }
-   }
+       },
+        changeGstyle:function(){
+            console.log("asdasd")
+            this.$store.commit('changeGrid');
+        },
+   },
 }
 </script>
 <style>
