@@ -31,8 +31,8 @@
             
         </div>
     </div>
-    <div class="bar" @click="changeGstyle">
-        <a class="list-icon active"></a>
+    <div class="bar">
+        <a class="list-icon active" @click="changeGstyle"></a>
         <a class="grid-icon" @click="changeGstyle"></a>
     </div>
     <aside class="grid-col section listing-filters">
@@ -118,8 +118,8 @@ export default {
             document.getElementById(event.currentTarget.id).className="order-opt active"
        },
         changeGstyle:function(){
-            console.log("asdasd")
             this.$store.commit('changeGrid');
+            this.$store.dispatch('changeGrid');
         },
    },
 }

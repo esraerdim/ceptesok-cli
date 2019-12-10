@@ -1,6 +1,6 @@
 <template>
     <div v-if="gor">
-        <div v-if="getGstyle">
+        <div v-if="!list">
             <div class="wrappers" v-for="product in data.payload.products" :key="product.data">
                 <div class="productC-img">
                 <img :src="'https://cdnd.ceptesok.com/product/420x420/'+ getPicture(product.files[0])" height="420" width="327">
@@ -17,7 +17,7 @@
                 </div>
             </div>
         </div>
-       <div v-if="!getGstyle">
+       <div v-if="list">
     <li class="list-result" v-for="product in data.payload.products" :key="product.data">
     <div class="productbox">
     <div class="product-cartcontrols">
@@ -74,13 +74,10 @@ export default {
         return {
          data:"",
          gor:false,
-         list:false
+         list:true
         }
      },
      methods:{
-        getGstyle:function(){
-          return this.$store.getters.getGridState;
-        },
         gettype:function(miktar){
            return miktar == 1 ? "Adet" : "Kg"
         },
@@ -97,7 +94,6 @@ export default {
                 imgurl= "product-default.png"
             }
             return  imgurl;
-            
         },
          getanyp:function(){
              console.log(this.$route.query)
@@ -142,10 +138,17 @@ export default {
      watch: {
         '$route.query.page'(){
             this.getanyp();
+        },
+        '$store.getters.getGridState'(){
+          this.list=this.$store.getters.getGridState;
         }
      },
      mounted() {
             this.getanyp();
+    },
+    computed(){
+       this.list=this.$store.getters.getGridState;
+       return this.$store.getters.getGridState;
     },
     created() {
         console.log(this.$route.query)

@@ -17,7 +17,7 @@ const mutations={
         if(state.SViewSquare){
             state.SViewSquare = false;
         }else{
-            state.SViewSquare=true;
+            state.SViewSquare = true;
         }
     }
 };
