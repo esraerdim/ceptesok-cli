@@ -16,8 +16,10 @@ const mutations={
     changeGrid(state,eventN){
         if(eventN.path[0].className=="grid-icon"){
             state.SViewSquare = false
+            eventN.path[0].className = "grid-icon active"
         }else{
             state.SViewSquare = true
+            eventN.path[0].className +=" active"
         }
     }
 };

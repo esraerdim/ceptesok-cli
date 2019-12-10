@@ -118,6 +118,9 @@ export default {
             document.getElementById(event.currentTarget.id).className="order-opt active"
        },
         changeGstyle:function(e){
+            var list = document.querySelectorAll("#app > div > div > div.bar")[0].children
+            list[0].className="list-icon";
+            list[1].className="grid-icon";
             this.$store.commit('changeGrid',e)
         },
    },
