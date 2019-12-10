@@ -6899,7 +6899,7 @@ function (t) {
 					playDuration: 5,
 					autoPlay: !1,
 					loadIndexOnly: !0,
-					preloaderUrl: "/assets/img/loadingindicator.gif",
+					preloaderUrl: "../loadingindicator.gif",
 					resizeDuration: -1
 				}, r),
 				ot = $(i),
