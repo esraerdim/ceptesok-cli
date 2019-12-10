@@ -52,12 +52,12 @@
                         <li class="menu-item"><router-link to="/et">Et, Tavuk,<br>Hindi</router-link></li>
                         <li class="menu-item"><router-link to="/sut">Süt, Yoğurt,<br>Süt Ürünleri</router-link></li>
                         <li class="menu-item"><router-link to="/kahvaltilik">Kahvaltılık</router-link></li>
+                        <li class="menu-item"><router-link to="temizlik">Temizlik</router-link></li>
                         <li class="menu-item"><a href="https://www.ceptesok.com/yemeklik-malzemeler" data-menu="top-menu4" class="topmenu-trigger">Yemeklik<br>Malzemeler</a></li>
                         <li class="menu-item"><a href="https://www.ceptesok.com/icecek" data-menu="top-menu5" class="topmenu-trigger">İçecek</a></li>
                         <li class="menu-item"><a href="https://www.ceptesok.com/biskuvi-cikolata-kuruyemis" data-menu="top-menu6" class="topmenu-trigger">Bisküvi, Çikolata,<br>Kuruyemiş</a></li>
                         <li class="menu-item"><a href="https://www.ceptesok.com/unlu-mamuller-pastane" data-menu="top-menu7" class="topmenu-trigger">Unlu<br>Mamüller</a></li>
                         <li class="menu-item"><a href="https://www.ceptesok.com/meyve-sebze" data-menu="top-menu8" class="topmenu-trigger">Meyve,<br>Sebze</a></li>
-                        <li class="menu-item"><a href="https://www.ceptesok.com/temizlik" data-menu="top-menu9" class="topmenu-trigger">Temizlik</a></li>
                         <li class="menu-item"><a href="https://www.ceptesok.com/kisisel-bakim" data-menu="top-menu10" class="topmenu-trigger">Kişisel<br>Bakım</a></li>
                         <li class="menu-item"><a href="https://www.ceptesok.com/elektronik-giyim-diger" data-menu="top-menu11" class="topmenu-trigger">Gıda<br>Dışı</a></li>
                         <li class="menu-item"><a href="https://www.ceptesok.com/bebek-urunleri" data-menu="top-menu12" class="topmenu-trigger">Bebek<br>Ürünleri</a></li>
