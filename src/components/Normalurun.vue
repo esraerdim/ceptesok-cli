@@ -7,7 +7,7 @@
                 </div>
                 <div class="productC-info">
                 <div class="productC-text">
-                    <h1>{{product.warranty_description}}</h1>
+                     <router-link :to="{name: 'Urun',path: '/urun/'+product.link_name, params:{id:product.serial_productid}}"><h1>{{product.warranty_description}}</h1></router-link>
                     <h2>Stokta</h2>
                 </div>
                 <div class="productC-price-btn">

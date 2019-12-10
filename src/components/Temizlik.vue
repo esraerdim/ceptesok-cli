@@ -32,8 +32,8 @@
         </div>
     </div>
    <div class="bar">
-        <a class="list-icon active" @click="changeGstyle($event)"></a>
-        <a class="grid-icon" @click="changeGstyle($event)"></a>
+        <a v-bind:class="{active:this.$store.getters.getGridState}" class="list-icon" @click="changeGstyle($event)"></a>
+        <a v-bind:class="{active:!this.$store.getters.getGridState}" class="grid-icon" @click="changeGstyle($event)"></a>
     </div>
     <aside class="grid-col section listing-filters">
         <div class="filters-wrapper">
