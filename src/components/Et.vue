@@ -31,17 +31,10 @@
             
         </div>
     </div>
-<<<<<<< HEAD
     <div class="bar" @click="changeGstyle">
         <a class="list-icon active"></a>
         <a class="grid-icon" @click="changeGstyle"></a>
     </div>
-=======
-    <div class="bar">
-                        <a class="list-icon active"></a>
-		                <a class="grid-icon"></a>
-	</div>
->>>>>>> 02d54a5af57280a245f58014f6cd75741a047135
     <aside class="grid-col section listing-filters">
         <div class="filters-wrapper">
             <button class="filters-close"><i class="icon-close"></i></button>
