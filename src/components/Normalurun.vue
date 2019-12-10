@@ -3,7 +3,7 @@
         <div v-if="!list">
             <div class="wrappers" v-for="product in data.payload.products" :key="product.data">
                 <div class="productC-img">
-                <img :src="'https://cdnd.ceptesok.com/product/420x420/'+ getPicture(product.files[0])" height="420" width="327">
+              <router-link :to="{name: 'Urun',path: '/urun/'+product.link_name, params:{id:product.serial_productid}}">  <img :src="'https://cdnd.ceptesok.com/product/420x420/'+ getPicture(product.files[0])" height="420" width="327"></router-link>
                 </div>
                 <div class="productC-info">
                 <div class="productC-text">
@@ -74,7 +74,7 @@ export default {
         return {
          data:"",
          gor:false,
-         list:true
+         list:this.$store.getters.getGridState
         }
      },
      methods:{
