@@ -32,8 +32,8 @@
         </div>
     </div>
     <div class="bar">
-        <a class="list-icon active" @click="changeGstyle"></a>
-        <a class="grid-icon" @click="changeGstyle"></a>
+        <a class="list-icon active" @click="changeGstyle($event)"></a>
+        <a class="grid-icon" @click="changeGstyle($event)"></a>
     </div>
     <aside class="grid-col section listing-filters">
         <div class="filters-wrapper">
@@ -117,9 +117,11 @@ export default {
             document.getElementById('degisiklikicin').childNodes[4].className="order-opt"
             document.getElementById(event.currentTarget.id).className="order-opt active"
        },
-        changeGstyle:function(){
-            this.$store.commit('changeGrid')
-            this.$store.dispatch('changeGrid')
+        changeGstyle:function(e){
+            var list = document.querySelectorAll("#app > div > div > div.bar")[0].children
+            list[0].className="list-icon";
+            list[1].className="grid-icon";
+            this.$store.commit('changeGrid',e)
         },
    },
 }
