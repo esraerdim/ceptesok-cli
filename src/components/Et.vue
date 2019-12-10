@@ -118,8 +118,8 @@ export default {
             document.getElementById(event.currentTarget.id).className="order-opt active"
        },
         changeGstyle:function(){
-            this.$store.commit('changeGrid');
-            this.$store.dispatch('changeGrid');
+            this.$store.commit('changeGrid')
+            this.$store.dispatch('changeGrid')
         },
    },
 }

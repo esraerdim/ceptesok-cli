@@ -137,18 +137,18 @@ export default {
     },
      watch: {
         '$route.query.page'(){
-            this.getanyp();
+            this.getanyp()
         },
         '$store.getters.getGridState'(){
-          this.list=this.$store.getters.getGridState;
+          this.list=this.$store.getters.getGridState
         }
      },
      mounted() {
             this.getanyp();
     },
     computed(){
-       this.list=this.$store.getters.getGridState;
-       return this.$store.getters.getGridState;
+       this.list=this.$store.getters.getGridState
+       return this.$store.getters.getGridState
     },
     created() {
         console.log(this.$route.query)

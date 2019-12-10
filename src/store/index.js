@@ -9,15 +9,15 @@ const state={
 const getters={
     getGridState(state){
         console.log(state.SViewSquare)
-        return state.SViewSquare;
+        return state.SViewSquare
     }
 };
 const mutations={
     changeGrid(state){
         if(state.SViewSquare){
-            state.SViewSquare = false;
+            state.SViewSquare = false
         }else{
-            state.SViewSquare = true;
+            state.SViewSquare = true
         }
     }
 };
