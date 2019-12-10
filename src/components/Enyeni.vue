@@ -1,5 +1,23 @@
 <template>
     <div v-if="gor">
+         <div v-if="!list">
+            <div class="wrappers" v-for="product in data.payload.products" :key="product.data">
+                <div class="productC-img">
+              <router-link :to="{name: 'Urun',path: '/urun/'+product.link_name, params:{id:product.serial_productid}}">  <img :src="'https://cdnd.ceptesok.com/product/420x420/'+ getPicture(product.files[0])" height="420" width="327"></router-link>
+                </div>
+                <div class="productC-info">
+                <div class="productC-text">
+                     <router-link :to="{name: 'Urun',path: '/urun/'+product.link_name, params:{id:product.serial_productid}}"><h1>{{product.warranty_description}}</h1></router-link>
+                    <h2>Stokta</h2>
+                </div>
+                <div class="productC-price-btn">
+                    <p><spanC>{{product.serial_market_price}}</spanC><span class="currency"></span></p>
+                    <button type="button">Sepete Ekle</button>
+                </div>
+                </div>
+            </div>
+        </div>
+    <div v-if="list">
     <li class="list-result" v-for="product in data.payload.products" :key="product.data">
     <div class="productbox">
     <div class="product-cartcontrols">
@@ -48,6 +66,7 @@
 </div>
 </li>
 </div>
+</div>
 </template>
 <script>
 export default {
@@ -55,7 +74,8 @@ export default {
         return {
          data:"",
          url:this.$route.params.id,
-         gor:false
+         gor:false,
+         list:this.$store.getters.getGridState
         }
      },
      methods:{
@@ -120,10 +140,17 @@ export default {
     watch: {
         '$route.query.page'(){
             this.getanyp();
+        },
+        '$store.getters.getGridState'(){
+          this.list=this.$store.getters.getGridState
         }
      },
      mounted() {
             this.getanyp();
+    },
+     computed(){
+       this.list=this.$store.getters.getGridState
+       return this.$store.getters.getGridState
     },
     created() {
         if(this.$route.fullPath.includes('et')){
@@ -161,3 +188,126 @@ export default {
     }
 }
 </script>
+<style>
+div {
+    display: block;
+}
+.wrappers {
+  height: 420px;
+  width: 654px;
+  margin: 50px auto;
+  border-radius: 7px 7px 7px 7px;
+  /* VIA CSS MATIC https://goo.gl/cIbnS */
+  -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+}
+
+.productC-img {
+  float: left;
+  height: 420px;
+  width: 327px;
+}
+
+.productC-img img {
+  border-radius: 7px 0 0 7px;
+}
+
+.productC-info {
+  float: left;
+  height: 420px;
+  width: 327px;
+  border-radius: 0 7px 10px 7px;
+  background-color: #ffffff;
+}
+
+.productC-text {
+  height: 300px;
+  width: 327px;
+}
+
+.productC-text h1 {
+  font-family: 'Raleway', sans-serif;
+  margin: 0 0 0 38px;
+  padding-top: 52px;
+  font-size: 34px;
+  color: #474747;
+}
+
+.productC-text h1,
+.productC-price-btn p {
+  font-family: 'Raleway', sans-serif;
+}
+
+.productC-text h2 {
+  margin: 0 0 47px 38px;
+  font-size: 13px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #d2d2d2;
+  letter-spacing: 0.2em;
+}
+
+.productC-text p {
+  height: 125px;
+  margin: 0 0 0 38px;
+  font-family: 'Playfair Display', serif;
+  color: #8d8d8d;
+  line-height: 1.7em;
+  font-size: 15px;
+  font-weight: lighter;
+  overflow: hidden;
+}
+
+.productC-price-btn {
+  height: 103px;
+  width: 327px;
+  margin-top: 17px;
+  position: relative;
+}
+
+.productC-price-btn p {
+  display: inline-block;
+  position: absolute;
+  top: 11px;
+  height: 50px;
+  font-family: 'Trocchi', serif;
+  margin: 0 0 0 38px;
+  font-size: 28px;
+  font-weight: lighter;
+  color: #474747;
+}
+
+spanC {
+  margin-right:auto;
+  display: inline-block;
+  height: 50px;
+  font-family: 'Suranna', serif;
+  font-size: 34px;
+}
+
+.productC-price-btn button {
+  float: right;
+  display: inline-block;
+  height: 50px;
+  width: 150px;
+  margin: 0 30px 0 16px;
+  box-sizing: border-box;
+  border: transparent;
+  border-radius: 60px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #ffffff;
+  background-color: #9cebd5;
+  cursor: pointer;
+  outline: none;
+}
+
+.productC-price-btn button:hover {
+  background-color: #79b0a1;
+}
+</style>
