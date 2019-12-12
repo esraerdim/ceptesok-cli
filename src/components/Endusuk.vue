@@ -38,7 +38,7 @@
                 <button class="numberbox-button number-decrease"></button>
                 <input type="text" id="product_control_box_50" max="10" min="1" data-after="adet" data-step="1">
             </div>
-            <button data-modal="modal_stores" class="product-controlbutton btn gray small modaltrigger" >Market Seç
+            <button data-modal="modal_stores" class="product-controlbutton btn gray small modaltrigger" >Sepete Ekle
             </button>
             <!---->
         </div>
@@ -59,7 +59,7 @@
             <!---->
             <!---->
         </div>
-        <button v-on:click="goo(product.serial_productid)" id="storeTriggerEvent" data-modal="modal_stores" class="product-controlbutton btn gray small modaltrigger modalStoreTriggerEvent">Market Seç
+        <button v-on:click="goo(product.serial_productid)" id="storeTriggerEvent" data-modal="modal_stores" class="product-controlbutton btn gray small modaltrigger modalStoreTriggerEvent">Sepete Ekle
         </button>
         <!---->
     </div>

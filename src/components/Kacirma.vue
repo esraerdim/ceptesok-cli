@@ -389,7 +389,7 @@
                                           <p class="product-subtitle">1 adet</p>
                                           <!----> <!---->
                                        </div>
-                                       <button id="storeTriggerEvent" data-modal="modal_stores" class="product-controlbutton btn gray small modaltrigger modalStoreTriggerEvent">Market Seç
+                                       <button id="storeTriggerEvent" data-modal="modal_stores" class="product-controlbutton btn gray small modaltrigger modalStoreTriggerEvent">Sepete Ekle
                                        </button>
                                        <!---->
                                     </div>
@@ -430,7 +430,7 @@
                                           <p class="product-subtitle">1 adet</p>
                                           <!----> <!---->
                                        </div>
-                                       <button id="storeTriggerEvent" data-modal="modal_stores" class="product-controlbutton btn gray small modaltrigger modalStoreTriggerEvent">Market Seç
+                                       <button id="storeTriggerEvent" data-modal="modal_stores" class="product-controlbutton btn gray small modaltrigger modalStoreTriggerEvent">Sepete Ekle
                                        </button>
                                        <!---->
                                     </div>
@@ -479,7 +479,7 @@
                                           <p class="product-subtitle">1 adet</p>
                                           <!----> <!---->
                                        </div>
-                                       <button id="storeTriggerEvent" data-modal="modal_stores" class="product-controlbutton btn gray small modaltrigger modalStoreTriggerEvent">Market Seç
+                                       <button id="storeTriggerEvent" data-modal="modal_stores" class="product-controlbutton btn gray small modaltrigger modalStoreTriggerEvent">Sepete Ekle
                                        </button>
                                        <!---->
                                     </div>
@@ -528,7 +528,7 @@
                                           <p class="product-subtitle">1 adet</p>
                                           <!----> <!---->
                                        </div>
-                                       <button id="storeTriggerEvent" data-modal="modal_stores" class="product-controlbutton btn gray small modaltrigger modalStoreTriggerEvent">Market Seç
+                                       <button id="storeTriggerEvent" data-modal="modal_stores" class="product-controlbutton btn gray small modaltrigger modalStoreTriggerEvent">Sepete Ekle
                                        </button>
                                        <!---->
                                     </div>
@@ -577,7 +577,7 @@
                                           <p class="product-subtitle">1 adet</p>
                                           <!----> <!---->
                                        </div>
-                                       <button id="storeTriggerEvent" data-modal="modal_stores" class="product-controlbutton btn gray small modaltrigger modalStoreTriggerEvent">Market Seç
+                                       <button id="storeTriggerEvent" data-modal="modal_stores" class="product-controlbutton btn gray small modaltrigger modalStoreTriggerEvent">Sepete Ekle
                                        </button>
                                        <!---->
                                     </div>
@@ -894,7 +894,7 @@
                                           <p class="product-subtitle">1 adet</p>
                                           <!----> <!---->
                                        </div>
-                                       <button id="storeTriggerEvent" data-modal="modal_stores" class="product-controlbutton btn gray small modaltrigger modalStoreTriggerEvent">Market Seç </button>
+                                       <button id="storeTriggerEvent" data-modal="modal_stores" class="product-controlbutton btn gray small modaltrigger modalStoreTriggerEvent">Sepete Ekle </button>
                                        <!---->
                                     </div>
                                  </div>
@@ -933,7 +933,7 @@
                                           <p class="product-subtitle">1 adet</p>
                                           <!----> <!---->
                                        </div>
-                                       <button id="storeTriggerEvent" data-modal="modal_stores" class="product-controlbutton btn gray small modaltrigger modalStoreTriggerEvent">Market Seç </button>
+                                       <button id="storeTriggerEvent" data-modal="modal_stores" class="product-controlbutton btn gray small modaltrigger modalStoreTriggerEvent">Sepete Ekle </button>
                                        <!---->
                                     </div>
                                  </div>
@@ -972,7 +972,7 @@
                                           <p class="product-subtitle">1 adet</p>
                                           <!----> <!---->
                                        </div>
-                                       <button id="storeTriggerEvent" data-modal="modal_stores" class="product-controlbutton btn gray small modaltrigger modalStoreTriggerEvent">Market Seç </button>
+                                       <button id="storeTriggerEvent" data-modal="modal_stores" class="product-controlbutton btn gray small modaltrigger modalStoreTriggerEvent">Sepete Ekle </button>
                                        <!---->
                                     </div>
                                  </div>
@@ -1011,7 +1011,7 @@
                                           <p class="product-subtitle">1 adet</p>
                                           <!----> <!---->
                                        </div>
-                                       <button id="storeTriggerEvent" data-modal="modal_stores" class="product-controlbutton btn gray small modaltrigger modalStoreTriggerEvent">Market Seç </button>
+                                       <button id="storeTriggerEvent" data-modal="modal_stores" class="product-controlbutton btn gray small modaltrigger modalStoreTriggerEvent">Sepete Ekle </button>
                                        <!---->
                                     </div>
                                  </div>
@@ -1050,7 +1050,7 @@
                                           <p class="product-subtitle">1 adet</p>
                                           <!----> <!---->
                                        </div>
-                                       <button id="storeTriggerEvent" data-modal="modal_stores" class="product-controlbutton btn gray small modaltrigger modalStoreTriggerEvent">Market Seç </button>
+                                       <button id="storeTriggerEvent" data-modal="modal_stores" class="product-controlbutton btn gray small modaltrigger modalStoreTriggerEvent">Sepete Ekle </button>
                                        <!---->
                                     </div>
                                  </div>
@@ -1138,7 +1138,7 @@
                                           <p class="product-subtitle">1 adet</p>
                                           <!----> <!---->
                                        </div>
-                                       <button id="storeTriggerEvent" data-modal="modal_stores" class="product-controlbutton btn gray small modaltrigger modalStoreTriggerEvent">Market Seç </button>
+                                       <button id="storeTriggerEvent" data-modal="modal_stores" class="product-controlbutton btn gray small modaltrigger modalStoreTriggerEvent">Sepete Ekle </button>
                                        <!---->
                                     </div>
                                  </div>
@@ -1177,7 +1177,7 @@
                                           <p class="product-subtitle">1 adet</p>
                                           <!----> <!---->
                                        </div>
-                                       <button id="storeTriggerEvent" data-modal="modal_stores" class="product-controlbutton btn gray small modaltrigger modalStoreTriggerEvent">Market Seç </button>
+                                       <button id="storeTriggerEvent" data-modal="modal_stores" class="product-controlbutton btn gray small modaltrigger modalStoreTriggerEvent">Sepete Ekle </button>
                                        <!---->
                                     </div>
                                  </div>
@@ -1216,7 +1216,7 @@
                                           <p class="product-subtitle">1 adet</p>
                                           <!----> <!---->
                                        </div>
-                                       <button id="storeTriggerEvent" data-modal="modal_stores" class="product-controlbutton btn gray small modaltrigger modalStoreTriggerEvent">Market Seç </button>
+                                       <button id="storeTriggerEvent" data-modal="modal_stores" class="product-controlbutton btn gray small modaltrigger modalStoreTriggerEvent">Sepete Ekle </button>
                                        <!---->
                                     </div>
                                  </div>
@@ -1255,7 +1255,7 @@
                                           <p class="product-subtitle">1 adet</p>
                                           <!----> <!---->
                                        </div>
-                                       <button id="storeTriggerEvent" data-modal="modal_stores" class="product-controlbutton btn gray small modaltrigger modalStoreTriggerEvent">Market Seç </button>
+                                       <button id="storeTriggerEvent" data-modal="modal_stores" class="product-controlbutton btn gray small modaltrigger modalStoreTriggerEvent">Sepete Ekle </button>
                                        <!---->
                                     </div>
                                  </div>
@@ -1294,7 +1294,7 @@
                                           <p class="product-subtitle">1 adet</p>
                                           <!----> <!---->
                                        </div>
-                                       <button id="storeTriggerEvent" data-modal="modal_stores" class="product-controlbutton btn gray small modaltrigger modalStoreTriggerEvent">Market Seç </button>
+                                       <button id="storeTriggerEvent" data-modal="modal_stores" class="product-controlbutton btn gray small modaltrigger modalStoreTriggerEvent">Sepete Ekle </button>
                                        <!---->
                                     </div>
                                  </div>
@@ -1333,7 +1333,7 @@
                                           <p class="product-subtitle">1 adet</p>
                                           <!----> <!---->
                                        </div>
-                                       <button id="storeTriggerEvent" data-modal="modal_stores" class="product-controlbutton btn gray small modaltrigger modalStoreTriggerEvent">Market Seç
+                                       <button id="storeTriggerEvent" data-modal="modal_stores" class="product-controlbutton btn gray small modaltrigger modalStoreTriggerEvent">Sepete Ekle
                                        </button>
                                        <!---->
                                     </div>
@@ -1373,7 +1373,7 @@
                                           <p class="product-subtitle">1 adet</p>
                                           <!----> <!---->
                                        </div>
-                                       <button id="storeTriggerEvent" data-modal="modal_stores" class="product-controlbutton btn gray small modaltrigger modalStoreTriggerEvent">Market Seç
+                                       <button id="storeTriggerEvent" data-modal="modal_stores" class="product-controlbutton btn gray small modaltrigger modalStoreTriggerEvent">Sepete Ekle
                                        </button>
                                        <!---->
                                     </div>
@@ -1413,7 +1413,7 @@
                                           <p class="product-subtitle">1 adet</p>
                                           <!----> <!---->
                                        </div>
-                                       <button id="storeTriggerEvent" data-modal="modal_stores" class="product-controlbutton btn gray small modaltrigger modalStoreTriggerEvent">Market Seç
+                                       <button id="storeTriggerEvent" data-modal="modal_stores" class="product-controlbutton btn gray small modaltrigger modalStoreTriggerEvent">Sepete Ekle
                                        </button>
                                        <!---->
                                     </div>
@@ -1453,7 +1453,7 @@
                                           <p class="product-subtitle">1 adet</p>
                                           <!----> <!---->
                                        </div>
-                                       <button id="storeTriggerEvent" data-modal="modal_stores" class="product-controlbutton btn gray small modaltrigger modalStoreTriggerEvent">Market Seç
+                                       <button id="storeTriggerEvent" data-modal="modal_stores" class="product-controlbutton btn gray small modaltrigger modalStoreTriggerEvent">Sepete Ekle
                                        </button>
                                        <!---->
                                     </div>

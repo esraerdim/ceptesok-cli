@@ -497,14 +497,14 @@ h1,h2,h3,h4,h5,h6{
     -webkit-transition:color 180ms ease,background-color 180ms ease,border-color 180ms ease;
     transition:color 180ms ease,background-color 180ms ease,border-color 180ms ease;
     border-radius:3px;
-    border-color:#ececec;
-    background-color:#ececec;
-    color:#363636;
+    border-color:#52d184;
+    background-color:#52d184;
+    color:#fff;
     cursor:pointer
 }
 .btn:active,.btn:hover{
-    border-color:#dfdfdf;
-    background-color:#dfdfdf
+    border-color:#52d184;
+    background-color:#52d184
 }
 .btn.hollow{
     border-color:#ececec;

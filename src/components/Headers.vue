@@ -18,7 +18,7 @@
                     <div class="mid-left">
                         <div class="left-button not-selected">
                             <i class="button-icon icon-store-location"></i> 
-                            <div data-modal="modal_stores" class="button-content modaltrigger">Market Seç</div>
+                            <div data-modal="modal_stores" class="button-content modaltrigger">Sepete Ekle</div>
                         </div>
                     </div>
                     <form id="searcharea" class="mid-search inputform">
