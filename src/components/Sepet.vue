@@ -1,6 +1,6 @@
 <template>
    <div> 
-        <button class="right-cartinfo basketbar-trigger">
+        <button class="right-cartinfo basketbar-trigger" @click="go($event)">
             <div class="cartinfo-basket icon-cart-2"><i class="cartinfo-quantity">0</i></div>
             <div class="cartinfo-total">
                 <div class="pricebox plain">
@@ -10,7 +10,7 @@
             <span class="cartinfo-text">Sepet</span>
         </button>
 
-        <aside id="basket-bar">
+        <aside id="basket-bar" :class="{active , show}">
             <div class="basket-content">
                 <div class="content-wrap">
                     <div class="basket-items">
@@ -54,7 +54,19 @@
 export default {
     name:'Sepet',
      data() {
-       return {}
+       return {
+           active:true,
+           show:true
+       }
      },
+     methods:{
+         go:function(e){
+            if(this.active == true){
+                this.active=false; this.show=false;
+            }else{
+                 this.active=true; this.show=true;
+            }
+         }
+     }
 }
 </script>

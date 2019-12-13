@@ -429,7 +429,7 @@ var site = {
         initialized: !1,
         container: !1,
         init: function() {
-            $("#basket-bar").length && (basketBar.container = $("#basket-bar:first"), basketBar.container.off("click").on("click", function(e) {
+            $("#basket-barr").length && (basketBar.container = $("#basket-bar:first"), basketBar.container.off("click").on("click", function(e) {
                 $(e.target).is(basketBar.container) && basketBar.hide()
             }), site.body.off("click", ".basketbar-trigger").on("click", ".basketbar-trigger", basketBar.show), basketBar.initialized = !0)
         },
