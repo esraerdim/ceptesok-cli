@@ -36,8 +36,8 @@ export default {
     name:'Sepet',
      data() {
        return {
-           active:true,
-           show:true
+           active:false,
+           show:false
        }
      },
      methods:{

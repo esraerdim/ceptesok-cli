@@ -123,7 +123,7 @@ export default {
           getPicture(images){
             var imgurl;
             try{
-                if(images.document_href.includes("-"))
+                if(images.document_href.includes("-")||images.document_href.includes("_"))
                 {
                     imgurl=images.document_href
                 }else
