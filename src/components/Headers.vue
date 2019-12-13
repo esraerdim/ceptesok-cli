@@ -3724,11 +3724,11 @@
 </div>
 </template>
 <script>
-import Sepet from './Sepet.vue'
+import Sepet from './components/Sepet.vue'
 export default {
      name: 'Headers',
      components:{
-     Sepet,
+    Sepet,
    },
      data() {
        return {
