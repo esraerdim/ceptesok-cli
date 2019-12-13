@@ -98,7 +98,7 @@ export default {
          getanyp:function(){
              console.log(this.$route.query)
         if(this.$route.fullPath.includes('et')){
-        fetch('https://www.ceptesok.com/api/v1/products?limit=52&order=rank&page='+this.$route.query.page +'&categoryId=1242')
+        fetch('http://localhost:3000/api/v1/products?limit=52&order=rank&page='+this.$route.query.page +'&categoryId=1242')
         .then(response => response.json())
         .then(data => {
             this.data=data;
@@ -153,7 +153,7 @@ export default {
     created() {
         console.log(this.$route.query)
         if(this.$route.fullPath.includes('et')){
-        fetch('https://www.ceptesok.com/api/v1/products?limit=52&order=rank&page='+this.$route.query.page +'&categoryId=1242')
+        fetch('http:///api/v1/products?limit=52&order=rank&page='+this.$route.query.page +'&categoryId=1242')
         .then(response => response.json())
         .then(data => {
             this.data=data;
