@@ -98,6 +98,7 @@
                 <router-view/>
             </ul>
         </div>
+        <sayfalar/>
     </main>
 </div>
     <altkisim/>
