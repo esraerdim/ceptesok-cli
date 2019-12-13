@@ -36,7 +36,7 @@
                             <span class="cartinfo-text">Sepet</span>
                         </button> -->
                         <!---->
-                        <SepetteUrunler/> 
+                        <Sepet/> 
                         <div class="right-usercontrols not-logged">
                             <div class="usercontrols-desktop"><i class="icon-user-2 usercontrols-icon"></i> <button data-modal="modal_login" data-clickshow-group="loginform-sections" data-subject="member-login" class="usercontrols-button top modaltrigger clickshow notoggle">
                                 Giriş Yap
@@ -3708,11 +3708,11 @@
 </div>
 </template>
 <script>
-import SepetteUrunler from './SepetteUrunler.vue'
+import Sepet from './Sepet.vue'
 export default {
      name: 'Headers',
      components:{
-     SepetteUrunler,
+     Sepet,
    },
      data() {
        return {
