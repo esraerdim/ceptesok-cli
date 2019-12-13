@@ -26,7 +26,7 @@
                         <div id="search-results"></div>
                     </form>
                     <div class="mid-right">
-                        <button class="right-cartinfo basketbar-trigger">
+                        <!-- <button class="right-cartinfo basketbar-trigger">
                             <div class="cartinfo-basket icon-cart-2"><i class="cartinfo-quantity">0</i></div>
                             <div class="cartinfo-total">
                                 <div class="pricebox plain">
@@ -34,7 +34,7 @@
                                 </div>
                             </div>
                             <span class="cartinfo-text">Sepet</span>
-                        </button>
+                        </button> -->
                         <!----> 
                         <div class="right-usercontrols not-logged">
                             <div class="usercontrols-desktop"><i class="icon-user-2 usercontrols-icon"></i> <button data-modal="modal_login" data-clickshow-group="loginform-sections" data-subject="member-login" class="usercontrols-button top modaltrigger clickshow notoggle">
@@ -2334,16 +2334,16 @@
                 </div>
             </div>
         </div>
-        <aside id="basket-bar">
+        <!-- <aside id="basket-bar">
             <div class="basket-content">
                 <div class="content-wrap">
-                    <!----> 
+                    
                     <div class="basket-items">
                         <div class="items-empty">
                             Sepetinde şu anda<br> ürün bulunmuyor.
                         </div>
                     </div>
-                    <!----> 
+                   
                     <div class="basket-controls empty grid-container narrow-vertical">
                         <div class="controls-buttons grid-row">
                             <div class="grid-col"><a href="https://www.ceptesok.com/html/index.php?id=checkout-1" class="btn yellow block">Sepete Git</a></div>
@@ -2351,7 +2351,7 @@
                     </div>
                 </div>
             </div>
-        </aside>
+        </aside> -->
         <div>
             <div id="mobilemenu">
                 <div class="mobilemenu-head inputform">
@@ -3724,8 +3724,12 @@
 </div>
 </template>
 <script>
+import Sepet from './components/Sepet.vue'
 export default {
      name: 'Headers',
+     components:{
+      Sepet,
+   },
      data() {
        return {
         data:"",
