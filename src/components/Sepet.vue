@@ -1,5 +1,5 @@
 <template>
-   <div>
+   <div> 
         <button class="right-cartinfo basketbar-trigger">
             <div class="cartinfo-basket icon-cart-2"><i class="cartinfo-quantity">0</i></div>
             <div class="cartinfo-total">
@@ -35,6 +35,6 @@ export default {
     name:'Sepet',
      data() {
        return {}
-     }
+     },
 }
 </script>
