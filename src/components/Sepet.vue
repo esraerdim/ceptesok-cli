@@ -26,6 +26,26 @@
                 </div>
             </div>
         </aside>
+
+        <!-- <aside id="basket-bar" class="active show">
+            <div class="basket-content">
+                <div class="content-wrap"> 
+                    <div class="basket-items">
+                        <div class="items-empty">
+                            Sepetinde şu anda<br> ürün bulunmuyor.
+                        </div>
+                    </div>
+                    <div class="basket-controls empty grid-container narrow-vertical">
+                        <div class="controls-buttons grid-row">
+                            <div class="grid-col">
+                                <a href="/html/index.php?id=checkout-1" class="btn yellow block">Sepete Git</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside> -->
+
    </div>
 </template>
 
