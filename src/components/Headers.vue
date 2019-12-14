@@ -53,7 +53,7 @@
                         <li class="menu-item"><router-link to="/et">Et, Tavuk,<br>Hindi</router-link></li>
                         <li class="menu-item"><router-link to="/sut">Süt, Yoğurt,<br>Süt Ürünleri</router-link></li>
                         <li class="menu-item"><router-link to="/kahvaltilik">Kahvaltılık</router-link></li>
-                        <li class="menu-item"><router-link to="temizlik">Temizlik</router-link></li>
+                        <li class="menu-item"><router-link to="/temizlik">Temizlik</router-link></li>
                         <li class="menu-item"><a href="https://www.ceptesok.com/yemeklik-malzemeler" data-menu="top-menu4" class="topmenu-trigger">Yemeklik<br>Malzemeler</a></li>
                         <li class="menu-item"><a href="https://www.ceptesok.com/icecek" data-menu="top-menu5" class="topmenu-trigger">İçecek</a></li>
                         <li class="menu-item"><a href="https://www.ceptesok.com/biskuvi-cikolata-kuruyemis" data-menu="top-menu6" class="topmenu-trigger">Bisküvi, Çikolata,<br>Kuruyemiş</a></li>
