@@ -152,6 +152,7 @@ export default {
 	position:absolute;
 	text-align:right;
 	line-height: 1;
+    z-index: 2;
 }
 
 .bar a{
@@ -163,6 +164,7 @@ export default {
 	margin-right:5px;
 	border-radius:2px;
 	cursor:pointer;
+    z-index: 2;
 }
 .bar a.active{
     background-color: #FFE000;
@@ -190,6 +192,7 @@ export default {
 	font-weight: bold;
 	outline: none;
 	text-indent: 40px;
+    z-index: 2;
 }
 
 </style>

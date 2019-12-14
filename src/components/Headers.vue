@@ -75,7 +75,7 @@
                 <div id="menu-mobile" class="menu-content active">
                     <ul class="menu-items">
                         <li class="items-item active">
-                            <button class="item-button">Et &amp;&nbsp;Tavuk &amp;&nbsp;Hindi &amp;&nbsp;Balık</button> 
+                            <button class="item-button"><router-link to="/et">Et &amp;&nbsp;Tavuk &amp;&nbsp;Hindi &amp;&nbsp;Balık</router-link></button> 
                             <ul class="item-submenu">
                                 <li class="submenu-item">
                                     <button class="submenu-button"> </button> 
@@ -131,7 +131,7 @@
                             </ul>
                         </li>
                         <li class="items-item active">
-                            <button class="item-button">Süt, Yoğurt ve&nbsp;Süt Ürünleri</button> 
+                            <button class="item-button"><router-link to="/sut">Süt, Yoğurt ve&nbsp;Süt Ürünleri</router-link></button> 
                             <ul class="item-submenu">
                                 <li class="submenu-item">
                                     <button class="submenu-button">Süt</button> 
@@ -332,7 +332,7 @@
                             </ul>
                         </li>
                         <li class="items-item active">
-                            <button class="item-button">Kahvaltılık</button> 
+                            <button class="item-button"><router-link to="/kahvaltilik">Kahvaltılık</router-link></button> 
                             <ul class="item-submenu">
                                 <li class="submenu-item">
                                     <button class="submenu-button">Süt</button> 
@@ -818,7 +818,7 @@
                             </ul>
                         </li>
                         <li class="items-item active">
-                            <button class="item-button">Temizlik</button> 
+                            <button class="item-button"><router-link to="/temizlik">Temizlik</router-link></button> 
                             <ul class="item-submenu">
                                 <li class="submenu-item">
                                     <button class="submenu-button">Bulaşık</button> 
