@@ -247,7 +247,7 @@ var site = {
         timer: null,
         hoverTimeout: 300,
         init: function() {
-            $(".topmenu").length && !topMenu.initialized && (topMenu.container = $(".topmenu:first"), topMenu.overlay = $(".topmenu-overlay:first"), topMenu.initialized = !0, site.body.on("mouseenter", ".topmenu-trigger[data-menu]:not(.click)", function() {
+            $(".topmenuu").length && !topMenu.initialized && (topMenu.container = $(".topmenu:first"), topMenu.overlay = $(".topmenu-overlay:first"), topMenu.initialized = !0, site.body.on("mouseenter", ".topmenu-trigger[data-menu]:not(.click)", function() {
                 var e = $(this);
                 menuID = e.attr("data-menu"), topMenu.timer = setTimeout(function() {
                     $(".topmenu-trigger", site.body).removeClass("hover"), e.addClass("hover"), topMenu.container.addClass("btnhover"), topMenu.show(menuID)
