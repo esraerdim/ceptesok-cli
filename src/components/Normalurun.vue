@@ -156,7 +156,7 @@ export default {
     created() {
         console.log(this.$route.query)
         if(this.$route.fullPath.includes('et')){
-        fetch('http://www.ceptesok.com/api/v1/products?limit=52&order=rank&page='+this.$route.query.page +'&categoryId=1242')
+        fetch('https://cepte.herokuapp.com/api/v1/products?limit=52&order=rank&page='+this.$route.query.page +'&categoryId=1242')
         .then(response => response.json())
         .then(data => {
             this.data=data;

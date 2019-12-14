@@ -8,8 +8,8 @@ var db
 MongoClient.connect('mongodb+srv://elifberkay:berkay1234.@ceptesok-homz1.mongodb.net/sok?retryWrites=true&w=majority', (err, client) => {
     if (err) return console.log(err)
     db = client.db('sok') // whatever your database name is
-    app.listen(3000, () => {
-      console.log('listening on 3000')
+    app.listen(process.env.PORT || 5000, () => {
+      console.log('listening on 5000')
     })
   })
   
