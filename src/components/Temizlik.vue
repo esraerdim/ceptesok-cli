@@ -5,17 +5,12 @@
         <a href="#"><img alt="Yukarı Çık" class="yukarikaydir" src="../img/yc.png" style="display: block;"></a>
     <div class="grid-row">
     <div class="section listing-toprow">
-        <div class="grid-col toprow-col toprow-mobile">
-            <p>454 ürün bulundu</p>
-            <button class="btn heavy small mobile-filterbtn listing-mobiletrigger-filters">Filtre</button>
-            <button class="btn heavy small mobile-filterbtn listing-mobiletrigger-order">Sırala</button>
-        </div>
         <div class="grid-col toprow-title">
             <div class="toprow-content">
                 454 ürün bulundu
             </div>
         </div>
-        <div class="grid-col toprow-col toprow-order">
+        <div class="grid-col toprow-col toprow-order active show">
             <div class="toprow-content"><span class="order-title">Sıralama:</span>
                 <nav class="order-opts" id="degisiklikicin">
                     <button v-on:click="focusx($event)" id="coksatan" class="order-opt active">
