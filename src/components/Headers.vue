@@ -64,17 +64,18 @@
                         <li class="menu-item"><a href="https://www.ceptesok.com/bebek-urunleri" data-menu="top-menu12" class="topmenu-trigger">Bebek<br>Ürünleri</a></li>
                     </ul>
                 </div>
-                <div class="header-bottom-mobile"><button data-menu="menu-mobile" class="bottom-mobile-menutrigger bottom-mobile-button topmenu-trigger click"><i class="icon-menu"></i> Kategoriler
+                                                                                    <!-- bottom-mobile-menutrigger bottom-mobile-button topmenu-trigger click hover -->
+                <div class="header-bottom-mobile"><button data-menu="menu-mobile" v-bind:class="{'hover':active}" class="bottom-mobile-menutrigger bottom-mobile-button topmenu-trigger click" @click="activeChange($event)"><i class="icon-menu"></i> Kategoriler
                     </button>
                 </div>
             </div>
-        </div>
-        <div class="topmenu">
+        </div> 
+        <div class="topmenu"  v-bind:class="{'active show':active}">
             <div class="menu-banners"><a href="https://www.ceptesok.com/kampanyalar#/" class="banners-banner imagefit"><img src="../img/55b1299dbab692fb2c8a3881fdf9d912.jpg" class="imagefit-img abs"></a><a href="https://www.ceptesok.com/taze-meyve-sebze#/" class="banners-banner imagefit"><img src="../img/36adde3b21ae3d9aedf0d4694742dbef.jpg" class="imagefit-img abs"></a></div>
             <div class="menu-wrap wrapper">
                 <div id="menu-mobile" class="menu-content active">
                     <ul class="menu-items">
-                        <li class="items-item active">
+                        <li class="items-item">
                             <button class="item-button"><router-link to="/et">Et &amp;&nbsp;Tavuk &amp;&nbsp;Hindi &amp;&nbsp;Balık</router-link></button> 
                             <ul class="item-submenu">
                                 <li class="submenu-item">
@@ -130,7 +131,7 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="items-item active">
+                        <li class="items-item">
                             <button class="item-button"><router-link to="/sut">Süt, Yoğurt ve&nbsp;Süt Ürünleri</router-link></button> 
                             <ul class="item-submenu">
                                 <li class="submenu-item">
@@ -199,7 +200,7 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="items-item active">
+                        <li class="items-item">
                             <button class="item-button">Yemeklik Malzemeler</button> 
                             <ul class="item-submenu">
                                 <li class="submenu-item">
@@ -331,7 +332,7 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="items-item active">
+                        <li class="items-item">
                             <button class="item-button"><router-link to="/kahvaltilik">Kahvaltılık</router-link></button> 
                             <ul class="item-submenu">
                                 <li class="submenu-item">
@@ -457,7 +458,7 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="items-item active">
+                        <li class="items-item">
                             <button class="item-button">İçecek</button> 
                             <ul class="item-submenu">
                                 <li class="submenu-item">
@@ -512,7 +513,7 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="items-item active">
+                        <li class="items-item">
                             <button class="item-button">Dondurulmuş Gıda</button> 
                             <ul class="item-submenu">
                                 <li class="submenu-item">
@@ -589,7 +590,7 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="items-item active">
+                        <li class="items-item ">
                             <button class="item-button">Bisküvi &amp;&nbsp;Çikolata &amp;&nbsp;Kuruyemiş</button> 
                             <ul class="item-submenu">
                                 <li class="submenu-item">
@@ -623,7 +624,7 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="items-item active">
+                        <li class="items-item">
                             <button class="item-button">Unlu Mamüller &amp;&nbsp;Pastane</button> 
                             <ul class="item-submenu">
                                 <li class="submenu-item">
@@ -669,7 +670,7 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="items-item active">
+                        <li class="items-item">
                             <button class="item-button">Meyve - Sebze</button> 
                             <ul class="item-submenu">
                                 <li class="submenu-item">
@@ -694,7 +695,7 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="items-item active">
+                        <li class="items-item">
                             <button class="item-button">Kişisel Bakım</button> 
                             <ul class="item-submenu">
                                 <li class="submenu-item">
@@ -817,7 +818,7 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="items-item active">
+                        <li class="items-item">
                             <button class="item-button"><router-link to="/temizlik">Temizlik</router-link></button> 
                             <ul class="item-submenu">
                                 <li class="submenu-item">
@@ -895,7 +896,7 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="items-item active">
+                        <li class="items-item">
                             <button class="item-button">Elektronik &amp;&nbsp;Giyim &amp;&nbsp;Diğer</button> 
                             <ul class="item-submenu">
                                 <li class="submenu-item">
@@ -1013,7 +1014,7 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="items-item active">
+                        <li class="items-item">
                             <button class="item-button">Bebek Ürünleri</button> 
                             <ul class="item-submenu">
                                 <li class="submenu-item">
@@ -1084,7 +1085,7 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="items-item active">
+                        <li class="items-item">
                             <button class="item-button">Light Ürünler</button> 
                             <ul class="item-submenu">
                                 <li class="submenu-item">
@@ -1095,7 +1096,7 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="items-item active">
+                        <li class="items-item">
                             <button class="item-button">Evcil Hayvan Ürünleri</button> 
                             <ul class="item-submenu">
                                 <li class="submenu-item">
@@ -3707,6 +3708,7 @@
         </div>
 </div>
 </template>
+<script src="../assets/js/b.js"></script>
 <script>
 import Sepet from './Sepet.vue'
 export default {
@@ -3720,9 +3722,20 @@ export default {
         subdata:[],
         gor:false,
         hideBar:true,
+        active:false
        }
     },
     methods:{
+     activeChange:function(e)
+     {
+        if(e.path[0].dataset.menu =="menu-mobile" || e.path[0].className=="icon-menu"){
+            if(this.active==true){
+                this.active=false;
+            }else{
+                this.active=true;
+            }
+        }
+     },
      hideOne:function(e){
           if(this.hideBar==true)
          this.hideBar=false;
