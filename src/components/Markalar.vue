@@ -22,7 +22,7 @@ export default {
      mounted() {
         if(this.$route.fullPath.includes('et'))
         {
-        fetch('https://www.ceptesok.com/api/v1/products?limit=52&order=opa&page=1&categoryId=1242')
+        fetch('https://cepte.herokuapp.com/api/v1/products?limit=52&order=opa&page=1&categoryId=1242')
         .then(response => response.json())
         .then(data => {
             var result= [];
@@ -40,7 +40,7 @@ export default {
         }
         if(this.$route.fullPath.includes('kahvaltilik'))
         {
-        fetch('https://www.ceptesok.com/api/v1/products?limit=52&order=ocd&page=1&categoryId=1245')
+        fetch('https://cepte.herokuapp.com/api/v1/products?limit=52&order=ocd&page=1&categoryId=1245')
         .then(response => response.json())
         .then(data => {
             var result= [];
@@ -58,7 +58,7 @@ export default {
         }
         if(this.$route.fullPath.includes('sut'))
         {
-        fetch('https://www.ceptesok.com/api/v1/products?limit=52&order=ocd&page=1&categoryId=1244')
+        fetch('https://cepte.herokuapp.com/api/v1/products?limit=52&order=ocd&page=1&categoryId=1244')
         .then(response => response.json())
         .then(data => {
             var result= [];
@@ -76,7 +76,7 @@ export default {
         }
         if(this.$route.fullPath.includes('temizlik'))
         {
-        fetch('https://www.ceptesok.com/api/v1/products?limit=52&order=opa&page=1&categoryId=1248')
+        fetch('https://cepte.herokuapp.com/api/v1/products?limit=52&order=opa&page=1&categoryId=1248')
         .then(response => response.json())
         .then(data => {
             var result= [];

@@ -101,7 +101,7 @@ export default {
          getanyp:function(){
              console.log(this.$route.query)
         if(this.$route.fullPath.includes('et')){
-        fetch('https://www.ceptesok.com/api/v1/products?limit=52&order=rank&page='+this.$route.query.page +'&categoryId=1242')
+        fetch('https://cepte.herokuapp.com/api/v1/products?limit=52&order=rank&page='+this.$route.query.page +'&categoryId=1242')
         .then(response => response.json())
         .then(data => {
             this.data=data;
@@ -110,7 +110,7 @@ export default {
           });
         }
         if(this.$route.fullPath.includes('kahvaltilik')){
-        fetch('https://www.ceptesok.com/api/v1/products?limit=52&order=rank&page='+this.$route.query.page +'&categoryId=1245')
+        fetch('https://cepte.herokuapp.com/api/v1/products?limit=52&order=rank&page='+this.$route.query.page +'&categoryId=1245')
         .then(response => response.json())
         .then(data => {
             this.data=data;
@@ -119,7 +119,7 @@ export default {
           });
         }
          if(this.$route.fullPath.includes('sut')){ 
-        fetch('https://www.ceptesok.com/api/v1/products?limit=52&order=rank&page='+this.$route.query.page +'&categoryId=1244')
+        fetch('https://cepte.herokuapp.com/api/v1/products?limit=52&order=rank&page='+this.$route.query.page +'&categoryId=1244')
         .then(response => response.json())
         .then(data => {
             this.data=data;
@@ -128,7 +128,7 @@ export default {
           });
         }
         if(this.$route.fullPath.includes('temizlik')){
-        fetch('https://www.ceptesok.com/api/v1/products?limit=52&order=rank&page='+this.$route.query.page +'&categoryId=1248')
+        fetch('https://cepte.herokuapp.com/api/v1/products?limit=52&order=rank&page='+this.$route.query.page +'&categoryId=1248')
         .then(response => response.json())
         .then(data => {
             this.data=data;
@@ -165,7 +165,7 @@ export default {
           });
         }
         if(this.$route.fullPath.includes('kahvaltilik')){
-        fetch('https://www.ceptesok.com/api/v1/products?limit=52&order=rank&page='+this.$route.query.page +'&categoryId=1245')
+        fetch('https://cepte.herokuapp.com/api/v1/products?limit=52&order=rank&page='+this.$route.query.page +'&categoryId=1245')
         .then(response => response.json())
         .then(data => {
             this.data=data;
@@ -174,7 +174,7 @@ export default {
           });
         }
          if(this.$route.fullPath.includes('sut')){ 
-        fetch('https://www.ceptesok.com/api/v1/products?limit=52&order=rank&page='+this.$route.query.page +'&categoryId=1244')
+        fetch('https://cepte.herokuapp.com/api/v1/products?limit=52&order=rank&page='+this.$route.query.page +'&categoryId=1244')
         .then(response => response.json())
         .then(data => {
             this.data=data;
