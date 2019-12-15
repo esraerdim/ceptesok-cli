@@ -5,7 +5,7 @@ import VueRouter from 'vue-router'
 import Home from './components/Home.vue'
 import Et from './components/Et.vue'
 import Sut from './components/Sut.vue'
-import Kahvaltilik from './components/kahvaltilik.vue'
+import Kahvaltilik from './components/Kahvaltilik.vue'
 import Temizlik from './components/Temizlik.vue'
 import Endusuk  from './components/Endusuk.vue'
 import Normalurun from './components/Normalurun.vue'
@@ -18,6 +18,7 @@ import {BadgerAccordion, BadgerAccordionItem} from 'vue-badger-accordion'
 Vue.component('BadgerAccordion', BadgerAccordion)
 Vue.component('BadgerAccordionItem', BadgerAccordionItem)
 Vue.use(VueRouter)
+
 
 const router = new VueRouter({
   routes: [
